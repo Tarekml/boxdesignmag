@@ -19,7 +19,7 @@ $.fn.jCarouselLite = function(o) {
 
     return this.each(function() {                           // Returns the element collection. Chainable.
 
-        var running = false, animCss=o.vertical?"top":"right", sizeCss=o.vertical?"height":"width";
+        var running = false, animCss=o.vertical?"top":"left", sizeCss=o.vertical?"height":"width";
         var div = $(this), ul = $("ul:first", div), tLi = $(".car", ul), tl = tLi.size(), v = o.visible;
 
         if(o.circular) {
@@ -31,7 +31,7 @@ $.fn.jCarouselLite = function(o) {
         var li = $(".car", ul), itemLength = li.size(), curr = o.start;
         div.css("visibility", "visible");
 
-        li.css({overflow: "hidden", float: o.vertical ? "none" : "right"});
+        li.css({overflow: "hidden", float: o.vertical ? "none" : "left"});
         ul.css({ padding: "0", position: "relative", "list-style-type": "none", "z-index": "1"});
         //div.css({overflow: "hidden", position: "relative", "z-index": "2", right: "29px"});
 		div.css({overflow: "hidden", "z-index": "2"});
