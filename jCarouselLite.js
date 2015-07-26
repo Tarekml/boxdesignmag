@@ -19,7 +19,7 @@ $.fn.jCarouselLite = function(o) {
 
     return this.each(function() {                           // Returns the element collection. Chainable.
 
-        var running = false, animCss=o.vertical?"top":"left", sizeCss=o.vertical?"height":"width";
+        var running = false, animCss=o.vertical?"top":"right", sizeCss=o.vertical?"height":"width";
         var div = $(this), ul = $("ul:first", div), tLi = $(".car", ul), tl = tLi.size(), v = o.visible;
 
         if(o.circular) {
