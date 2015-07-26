@@ -31,7 +31,7 @@ $.fn.jCarouselLite = function(o) {
         var li = $(".car", ul), itemLength = li.size(), curr = o.start;
         div.css("visibility", "visible");
 
-        li.css({overflow: "hidden", float: o.vertical ? "none" : "left"});
+        li.css({overflow: "hidden", float: o.vertical ? "none" : "right"});
         ul.css({ padding: "0", position: "relative", "list-style-type": "none", "z-index": "1"});
         //div.css({overflow: "hidden", position: "relative", "z-index": "2", right: "29px"});
 		div.css({overflow: "hidden", "z-index": "2"});
